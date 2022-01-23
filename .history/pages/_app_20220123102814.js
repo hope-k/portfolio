@@ -15,9 +15,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <CacheProvider value={emotionCache}>
-        <ChakraProvider>
+
+        <ChakraProvider re>
           <Component {...pageProps} />
         </ChakraProvider>
+
       </CacheProvider>
 
 
