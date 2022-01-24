@@ -11,7 +11,7 @@ import SplitType from 'split-type';
 const NavBar = () => {
 
     const logoRef = useRef();
-    const [open, setIsOpen] = useState(false)
+    const [open, setIsOpen] = useState(flase)
     const router = useRouter();
     const toggleOpen = () => setIsOpen(!open)
     useLayoutEffect(() => {
