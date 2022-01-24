@@ -12,7 +12,7 @@ const SideMenu = ({ open }) => {
 
 
         t1.current = gsap.timeline({ paused: true, defaults: { duration: .65 } })
-            .to('#sideMenu', { left: '0', right: 0, opacity: 1, ease: 'power4.inOut' })
+            .to('#sideMenu', { left: '0', right: 0, opacity: '1', ease: 'power4.inOut' })
             .from('#menuLink', { duration: .68, opacity: 0, y: 11, ease: 'circ.out', stagger: {each: 0.15} }, '-=.64')
 
 
