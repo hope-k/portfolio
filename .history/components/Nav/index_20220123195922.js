@@ -17,7 +17,7 @@ const NavBar = () => {
             <Container maxW={['21rem','40rem', '90rem']} p={'3'}>
                 <Flex alignItems={'center'} justifyContent={'space-between'}>
                     <Box>
-                        <Text fontSize={[25,30]} color='#ccc' fontWeight='bold'>HK</Text>
+                        <Text fontSize={[23,30]} color='#ccc' fontWeight='bold'>HK</Text>
                     </Box>
                     <Flex color='white'>
                         <Flex display={['none', 'inline-flex']}>
