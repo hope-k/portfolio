@@ -25,7 +25,7 @@ const SideMenu = ({ open }) => {
             t1.current.play()
         }
         if (open === false) {
-            t1.current.reverse(.45)
+            t1.current.reverse().timeScale(.10)
         }
     }, [open, t1])
 
