@@ -15,7 +15,7 @@ const MenuItem = styled.div`
     z-index: 1;
     display: block;
     margin-bottom: 4px;
-    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+    transition: all .85s cubic-bezier(.215, .61, .355, 1);
     &:nth-of-type(1){
         ${({ open }) => open && 'left: 0px'};
 
