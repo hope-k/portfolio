@@ -26,12 +26,12 @@ const Home = () => {
 
     const t1 = gsap.timeline({ defaults: { duration: .40 } });
     t1.from('#line1', { width: 0, ease: 'sine.in', duration: .8 })
-      .from(text1.chars, { duration: 8, x: -15, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.3, from: 'start' } })
-      .from(text2.chars, { color: 'teal', y: 10, opacity: 0, scale: 1.6, ease: "sine.out", stagger: { each: 0.09, from: 'start' }, duration: .8 }, '-=10')
+      .from(text1.chars, { duration: 8, x: -5, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.1, from: 'start' } })
+      .from(text2.chars, { color: 'teal', y: 10, opacity: 0, scale: 1.6, ease: "sine.out", stagger: { each: 0.09, from: 'start' }, duration: .8 }, '-=8')
       .from(text3.chars, { color: 'teal', y: -60, opacity: 0, ease: 'bounce.out', stagger: { each: 0.1, from: 'random' } }, '-=8')
-      .from('#buttonOne', { y: -7, opacity: 0, ease: 'Power4.inOut' }, '-=6')
-      .from('#buttonTwo', { y: 7, opacity: 0, ease: 'bounce.in' }, '-=6')
-      .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=7')
+      .from('#buttonOne', { y: -6, opacity: 0, ease: 'Power4.inOut' }, '-=8')
+      .from('#buttonTwo', { y: 6, opacity: 0, ease: 'bounce.in' }, '-=8')
+      .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' })
   }, [])
 
 
