@@ -4,14 +4,16 @@ import Home from '../components/Home'
 import { gsap } from "gsap/dist/gsap";
 
 export default function Index() {
-
+  useEffect(( ))
 
 
   return (
     <>
 
       <Layout>
+        <div id='home'>
           <Home />
+        </div>
       </Layout>
     </>
   );

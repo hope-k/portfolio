@@ -12,8 +12,8 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
     useEffect(() => {
         gsap.from('#layout', {
             opacity: 0,
-            ease: 'power4.in',
-            duration: 2.3,
+            ease: 'elastic.in',
+            duration: .8,
 
 
 

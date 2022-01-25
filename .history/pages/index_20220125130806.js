@@ -4,7 +4,13 @@ import Home from '../components/Home'
 import { gsap } from "gsap/dist/gsap";
 
 export default function Index() {
-
+  useEffect(() => {
+    gsap.from('#', {
+      opacity: 0,
+      ease: 'sine.in',
+      duration: .8
+    })
+  },[])
 
 
   return (
@@ -12,6 +18,7 @@ export default function Index() {
 
       <Layout>
           <Home />
+        </div>
       </Layout>
     </>
   );

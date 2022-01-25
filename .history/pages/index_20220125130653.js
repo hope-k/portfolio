@@ -11,7 +11,10 @@ export default function Index() {
     <>
 
       <Layout>
+        <div>
           <Home />
+
+        </div>
       </Layout>
     </>
   );

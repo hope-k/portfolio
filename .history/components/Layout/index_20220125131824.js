@@ -13,7 +13,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         gsap.from('#layout', {
             opacity: 0,
             ease: 'power4.in',
-            duration: 2.3,
+            duration: 1.9,
 
 
 
