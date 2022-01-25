@@ -60,7 +60,8 @@ const Home = () => {
   return (
 
     <>
-      <Box w='100%' overflow={'hidden'}>
+      <Box w=>
+
         <Flex overscrollBehavior={'none'} ref={panelContainer} w='300%' h='100vh' flexWrap={'nowrap'}>
           <Box position={'relative'} w='100%' h='100%'>
             <Background />
