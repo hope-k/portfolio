@@ -48,7 +48,7 @@ const Home = () => {
       scrollTrigger: {
         trigger: panelContainer.current,
         pin: true,
-        scrub: true,
+        scrub: .001,
         snap: 1 / (panels.length),
         end: () => '+=' + panelContainer.current.offsetWidth
       }

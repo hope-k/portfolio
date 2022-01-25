@@ -61,7 +61,7 @@ const Home = () => {
 
     <>
       <Box w='100%' overflow={'hidden'}>
-        <Flex overscrollBehavior={'none'} ref={panelContainer} w='300%' h='100%' flexWrap={'nowrap'}>
+        <Flex overscrollBehavior={'none'} ref={panelContainer} w='300%' h='100' flexWrap={'nowrap'}>
           <Box position={'relative'} w='100%' h='100%'>
             <Background />
             <Container d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} h='100vh'>
