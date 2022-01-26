@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  &:-webkit-scrollbar {
+      width: 15px;
+      height: 15px;
+      b
+  }
+
+  &:-webkit-scrollbar-track-piece {
+      background-color: #c2d2e4;
+  }
+
+  &:-webkit-scrollbar-thumb {
+      height: 30px;
+      background-color: #0a4c95;
+      border-radius: 10rem;
+  }
+
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
