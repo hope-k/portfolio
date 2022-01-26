@@ -29,7 +29,7 @@ const Home = () => {
       .from(text1.chars, { duration: 8, x: -15, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.3, from: 'start' } })
       .from(text2.chars, { color: 'teal', y: 10, opacity: 0, scale: 1.6, ease: "sine.out", stagger: { each: 0.09, from: 'start' }, duration: .8 }, '-=10')
       .from(text3.chars, {  y: -60, opacity: 0, ease: 'bounce.out', stagger: { each: 0.1, from: 'random' } }, '-=8')
-      .to(text3.chars, { color: 'white', textShadow:'0px 0px 15px #fff', ease: 'rough({strength: 5})', stagger: { each: 0.2, from: 'random' }, repeat: -1, repeatDelay: 2 }, '-=8')
+      .to(text3.chars, { color: 'white', textShadow:'0px 0px 15px #fff', ease: 'rough([', stagger: { each: 0.2, from: 'random' }, repeat: -1 }, '-=8')
       .from('#buttonOne', { y: -7, opacity: 0, ease: 'Power4.inOut' }, '-=6')
       .from('#buttonTwo', { y: 7, opacity: 0, ease: 'bounce.in' }, '-=6')
       .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=7')
