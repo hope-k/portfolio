@@ -47,7 +47,7 @@ const About = () => {
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc'>Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc'>Get to know more about me</Text>
                 </Flex>
-                <Flex position='relative' top='5.4rem' flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
+                <Flex position='relative' top='6rem' flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
                     <Box maxW={'60ch'} color='#ccc'>
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' mt='3rem'>Hi There!</Text>
                         <Text >
