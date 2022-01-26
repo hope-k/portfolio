@@ -8,7 +8,7 @@ const About = () => {
                 <Flex alignItems={'center'} justifyContent={'center'} top='8rem' flexDir={'column'} position={'absolute'}>
                     <Text mb='1rem' fontWeight={'bold'} color='teal'>ABOUT</Text>
                     <Text fontWeight={'800'} fontSize={'2.3rem'}>Personal Info</Text>
-                    <Text fontWeight={'600'} mb='1rem'>Get to know more about me</Text>
+                    <Text fontWeight={'600'} mb=1>Get to know more about me</Text>
                 </Flex>
                 <Flex flexDir={['column', 'row']} mt='7rem' justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'} h='100%'>
                     <Box  maxW={'60ch'}>
