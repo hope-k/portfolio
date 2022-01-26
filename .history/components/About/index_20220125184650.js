@@ -5,7 +5,7 @@ const About = () => {
     return (
         <Container d='flex' maxW={['21rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%'>
-                <Flex alignItems={'center'} justifyContent={'center'} top={['6rem','8rem']} flexDir={'column'} position={'absolute'}>
+                <Flex alignItems={'center'} justifyContent={'center'} top[={'8rem']} flexDir={'column'} position={'absolute'}>
                     <Text mb='1rem' fontWeight={'bold'} color='teal'>ABOUT</Text>
                     <Text fontWeight={'800'} fontSize={'2.3rem'}>Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem'>Get to know more about me</Text>
