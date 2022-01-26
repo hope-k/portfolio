@@ -19,7 +19,7 @@ const About = () => {
                         <br/>
                         <Text>I would love to hear from you. Whether its a project, job or opportunity at something great. Feel free to contact me</Text> 
                     </Box>
-                    <Box ml={['0','10rem']} mt={['2rem', '-7.5rem']} >
+                    <Box ml={['0','10rem']} mt={['2rem', '-8rem']} >
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='.5rem'>Skills</Text>
                         <Box d='flex'>
                             <Text>MY SKILLS</Text>
