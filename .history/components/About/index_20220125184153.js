@@ -12,7 +12,7 @@ const About = () => {
                 </Flex>
                 <Flex flexDir={['column', 'row']} mt='7rem' justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'} h='100%'>
                     <Box  maxW={'60ch'}>
-                        <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' mt='1rem'>Hi There!</Text>
+                        <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' mt=''>Hi There!</Text>
                         <Text>
                             I’m Hope Kumordzie and i am passionate Fullstack Web Developer using web technologies to build amazing modern web applications and focusing on solving problems for different niches.  I have  also provide my services to college students by getting their projects ready as a freelancer
                         </Text>
