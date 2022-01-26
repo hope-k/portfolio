@@ -88,7 +88,7 @@ const Home = () => {
             <Flex display={['none', 'flex']} position={'absolute'} height={'100vh'} width='10%' right={'0'} bg='rgba(0, 0, 0, .2)' justifyContent={'center'} alignItems={'center'}>
               <Text ml='3rem' fontSize={'4rem'} letterSpacing={'1rem'} fontFamily={'rale'} fontWeight={'900'} transform={'rotate(270deg)'} color='rgba(192,192,192,.2)' >
                 WORKS 
-                <Text position={'relative'} top='7rem' transform={'rotate(90deg)'} color='rgba(0, 0, 0, .2)'> &gt;</Text>
+                <Text position={'relative'} top='7rem' transform={'rotate(90deg)'} color='rgba(0, 0, 0, .2)'> &gt</Text>
               </Text>
             </Flex>
           </Box>
