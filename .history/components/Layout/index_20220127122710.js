@@ -16,13 +16,17 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         if (typeof window === 'undefined') {
             return
         }
+        const progressAnimation = gsap.fromTo('#progress', {
 
-        gsap.to('#progress', {
-            ease: 'none',
-            value: 100,
+            ease: 'none'
+                value: 0
+        })
+
+        gsap.fromTo('#progress', {
+
+
             scrollTrigger: {
-                scrub: 0.3
-
+                scrub: 0.3,
             }
 
         })

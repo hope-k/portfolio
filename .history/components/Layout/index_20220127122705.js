@@ -16,42 +16,47 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         if (typeof window === 'undefined') {
             return
         }
+        const progressAnimation = gsap.fromTo('#progress',{
+            {
+                ease: 'none'
+                value: 0
+            
+        })
 
-        gsap.to('#progress', {
-            ease: 'none',
-            value: 100,
+        gsap.fromTo('#progress', {
+
+
             scrollTrigger: {
-                scrub: 0.3
-
-            }
+            scrub: 0.3,
+        }
 
         })
 
-    })
-    return (
-        <>
-            <progress id='progress' max='100' value='0'></progress>
-            <div id='layout'>
+})
+return (
+    <>
+        <progress id='progress' max='100' value='0'></progress>
+        <div id='layout'>
 
-                <Head>
-                    <title>{title}</title>
-                </Head>
-                <NavBar />
+            <Head>
+                <title>{title}</title>
+            </Head>
+            <NavBar />
 
-                {children}
-
-
-            </div>
-
-        </>
+            {children}
 
 
+        </div>
+
+    </>
 
 
 
 
 
-    )
+
+
+)
 };
 
 export default Layout;
