@@ -35,8 +35,7 @@ const About = () => {
                 css: {
                     z: .01,
                     rotationY: '+=359',
-                    transformStyle: 'preserve3d'
-
+                    
                 },
                 duration: 20,
                 repeat: -1,
