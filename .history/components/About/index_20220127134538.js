@@ -78,7 +78,7 @@ const About = () => {
         <Container id='scroller' d='flex' maxW={['21rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex alignItems={'center'} justifyContent={'center'} top={['3rem', '8rem']} flexDir={'column'} position={'absolute'}>
-                    <Text transition={'all .14s ease'}  mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='about'>ABOUT</Text>
+                    <Text transition={'all .14s ease'}  mb='.5rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='about'>ABOUT</Text>
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='about' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='about'>Get to know more about me</Text>
                 </Flex>
