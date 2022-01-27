@@ -33,8 +33,8 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
     useLayoutEffect(() => {
         gsap.from('#layout', {
             opacity: 0,
-            duration: 5,
-            ease: 'Power4.easeInOut'
+            duration: 4,
+            ease: 'sine.out'
         })
     },[])
     return (
