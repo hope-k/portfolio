@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import NavBar from '../Nav'
 import { useState, useLayoutEffect } from 'react'
-import gsap  from "gsap";
+import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; gsap.registerPlugin(ScrollTrigger);
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,17 +22,17 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
             value: 100,
             scrollTrigger: {
                 scrub: 0.3,
-                
+                trigger: "body",
 
 
             }
 
         })
 
-    },[])
+    })
     return (
         <>
-            <progress id='progress' max='100' value='0'></progress>
+            <progress id='progress' max='100' value=0></progress>
             <div id='layout'>
 
                 <Head>

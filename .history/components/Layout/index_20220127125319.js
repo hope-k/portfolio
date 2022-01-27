@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import NavBar from '../Nav'
 import { useState, useLayoutEffect } from 'react'
-import gsap  from "gsap";
+import { gsap  from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; gsap.registerPlugin(ScrollTrigger);
 
 gsap.registerPlugin(ScrollTrigger);
