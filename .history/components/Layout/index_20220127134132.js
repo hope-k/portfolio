@@ -17,10 +17,10 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         }
 
         gsap.to('#progress', {
-            ease: 'none',
+            ease: 'Power4.eas',
             value: 100,
             scrollTrigger: {
-                scrub: 0.5,
+                scrub: 0.4,
                 
 
 
