@@ -82,7 +82,7 @@ const About = () => {
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='about' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='about'>Get to know more about me</Text>
                 </Flex>
-                <Flex ref={ref2} position='relative' top={['4rem','5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
+                <Flex ref={ref2} position='relative' top={['3rem','5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
                     <Box maxW={'60ch'} color='#ccc'>
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' mt='3rem'>Hi There!</Text>
                         <Text id='about'>
