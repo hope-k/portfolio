@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Layout = ({ title = 'Hope Kumordzie', children }) => {
     useLayoutEffect(() => {
-        if (typeof window === 'undefined') {
+        if(typeof window === 'undefined'){
             return
         }
 
@@ -26,21 +26,18 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
 
     })
     return (
-        <>
+        <div id='layout'>
             <progress id='progress' max='100' value='0'></progress>
-            <div id='layout'>
 
-                <Head>
-                    <title>{title}</title>
-                </Head>
-                <NavBar />
+            <Head>
+                <title>{title}</title>
+            </Head>
+            <NavBar />
 
-                {children}
+            {children}
 
 
-            </div>
-
-        </>
+        </div>
 
 
 
