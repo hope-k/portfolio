@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef, useEffect} from 'react';
 import { Flex, Box, Container, Text, Center } from '@chakra-ui/react';
 import { Tag } from 'antd';
 import { useInView } from 'react-intersection-observer';
-import  gsap  from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 

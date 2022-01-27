@@ -20,7 +20,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
             ease: 'none',
             value: 100,
             scrollTrigger: {
-                scrub: 0.57,
+                scrub: 0.5,
                 
 
 
