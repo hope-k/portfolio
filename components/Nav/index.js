@@ -35,8 +35,7 @@ const NavBar = () => {
             yPercent: -100,
             paused: true,
             duration: .8,
-            ease: 'Bounce.easeOut',
-            yoyoEase: true
+            ease: 'Power4.easeInOut',
         
 
         }).progress(1)

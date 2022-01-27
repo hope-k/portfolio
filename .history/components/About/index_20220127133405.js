@@ -82,7 +82,7 @@ const About = () => {
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='about' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='about'>Get to know more about me</Text>
                 </Flex>
-                <Flex ref={ref2} position='relative' top={['2rem','5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
+                <Flex ref={ref2} position='relative' top={[',5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
                     <Box maxW={'60ch'} color='#ccc'>
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' mt='3rem'>Hi There!</Text>
                         <Text id='about'>
@@ -103,7 +103,7 @@ const About = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box ml={['0', '10rem']} mt={['4rem', '0']}>
+                    <Box ml={['0', '10rem']} mt={['3rem', '0']}>
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' color='#ccc'>Skills</Text>
                         <Box>
                             <Tag id='about' style={{ marginBottom: '10px', fontWeight: '620', display: 'inline-block' }} color='processing'>REACT</Tag>

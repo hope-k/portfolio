@@ -103,7 +103,7 @@ const About = () => {
                             </Box>
                         </Box>
                     </Box>
-                    <Box ml={['0', '10rem']} mt={['4rem', '0']}>
+                    <Box ml={['0', '10rem']} mt={['3rem', '0']}>
                         <Text fontWeight={'700'} fontSize={'1.2rem'} mb='1rem' color='#ccc'>Skills</Text>
                         <Box>
                             <Tag id='about' style={{ marginBottom: '10px', fontWeight: '620', display: 'inline-block' }} color='processing'>REACT</Tag>

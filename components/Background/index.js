@@ -1,7 +1,8 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState, useLayoutEffect, useRef } from 'react'
 import styled from '@emotion/styled'
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; gsap.registerPlugin(ScrollTrigger);
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 const SvgBg = styled.div`
@@ -28,22 +29,22 @@ const SvgBg = styled.div`
 
 
 const Background = ({ trigger }) => {
+  const t1 = useRef();
   useLayoutEffect(() => {
     if (typeof window === 'undefined') {
       return
     }
-    const t1 = gsap.timeline()
 
-    t1.to('#bg', {
-      backgroundPosition: `center ${10 / 5}px`,
-      filter: 'brightness(50%)',
-      ease: "none",
-      scrollTrigger: {
-        trigger: `${trigger.current}`,
-        start: '30% 20%',
-        scrub: true
-      }
-    })
+    t1.current = gsap.timeline({ defaults: { ease: "none", } })
+      .to('#bg', {
+        backgroundPosition: `center ${10 / 5}px`,
+        filter: 'brightness(50%)',
+        scrollTrigger: {
+          trigger: `${trigger.current}`,
+          start: '30% 20%',
+          scrub: true
+        }
+      })
 
 
   })

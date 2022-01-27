@@ -3,8 +3,7 @@ import React from 'react'
 import NavBar from '../Nav'
 import { useState, useLayoutEffect } from 'react'
 import gsap  from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; gsap.registerPlugin(ScrollTrigger);
-
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; 
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -21,7 +20,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
             ease: 'none',
             value: 100,
             scrollTrigger: {
-                scrub: 0.3,
+                scrub: true,
                 
 
 
