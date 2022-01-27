@@ -20,6 +20,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         gsap.to('progress', {
             ease: 'none',
             value: 100,
+            duration: 2.3,
             scrollTrigger: { scrub: 0.3 }
 
         })

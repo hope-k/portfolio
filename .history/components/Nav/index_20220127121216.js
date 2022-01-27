@@ -39,7 +39,7 @@ const NavBar = () => {
             yoyoEase: true
         
 
-        }).progress(1)
+        })
 
         ScrollTrigger.create({
             start: 'top top',
@@ -48,7 +48,7 @@ const NavBar = () => {
                 self.direction === -1 ? navAnimation.play() : navAnimation.reverse()
             }
         })
-    },[])
+    })
 
     return (
         <>

@@ -39,7 +39,7 @@ const NavBar = () => {
             yoyoEase: true
         
 
-        }).progress(1)
+        })
 
         ScrollTrigger.create({
             start: 'top top',
