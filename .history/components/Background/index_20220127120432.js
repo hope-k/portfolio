@@ -16,7 +16,7 @@ const SvgBg = styled.div`
   bottom: 0;
   top: 0;
   z-index: -2;
-  filter: brightness(15%);
+  filter: brightness(17%);
   transition: all .5s ease;
   background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, .1), rgba(117, 19, 93, .6)),
