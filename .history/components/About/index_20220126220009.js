@@ -10,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger)
 const About = () => {
     const [ref2, inView2] = useInView({threshold: .5})
     const t1 = useRef()
-    const aboutRef = useRef(null)
 
     useLayoutEffect(() => {
 
@@ -38,7 +37,7 @@ const About = () => {
                 },
                 duration: 20,
                 repeat: -1,
-                ease: 'Back.easeOut'
+                ease: 'Linear.easeNone'
 
 
             })
@@ -56,7 +55,7 @@ const About = () => {
             opacity: 0,
             duration: .8,
             ease: 'Power$.easeOut'
-        }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080'})
+        })
         
     },[])
 

@@ -38,7 +38,7 @@ const About = () => {
                 },
                 duration: 20,
                 repeat: -1,
-                ease: 'Back.easeOut'
+                ease: 'slow(1, .24, true)'
 
 
             })

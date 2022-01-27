@@ -10,7 +10,6 @@ gsap.registerPlugin(ScrollTrigger)
 const About = () => {
     const [ref2, inView2] = useInView({threshold: .5})
     const t1 = useRef()
-    const aboutRef = useRef(null)
 
     useLayoutEffect(() => {
 
@@ -38,7 +37,7 @@ const About = () => {
                 },
                 duration: 20,
                 repeat: -1,
-                ease: 'Back.easeOut'
+                ease: 'Linear.easeNone'
 
 
             })
@@ -56,7 +55,7 @@ const About = () => {
             opacity: 0,
             duration: .8,
             ease: 'Power$.easeOut'
-        }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080'})
+        })
         
     },[])
 
@@ -74,7 +73,7 @@ const About = () => {
         <Container id='scroller' d='flex' maxW={['21rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex alignItems={'center'} justifyContent={'center'} top={['6rem', '8rem']} flexDir={'column'} position={'absolute'}>
-                    <Text  mb='1rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='about'>ABOUT</Text>
+                    <Text  mb='1rem' fontWeight={'bold'} color='teal' ref={about} id='about'>ABOUT</Text>
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='about' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='about'>Get to know more about me</Text>
                 </Flex>

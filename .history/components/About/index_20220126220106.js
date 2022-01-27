@@ -38,7 +38,7 @@ const About = () => {
                 },
                 duration: 20,
                 repeat: -1,
-                ease: 'Back.easeOut'
+                ease: 'Power4.easeOut'
 
 
             })
@@ -56,7 +56,7 @@ const About = () => {
             opacity: 0,
             duration: .8,
             ease: 'Power$.easeOut'
-        }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080'})
+        })
         
     },[])
 
