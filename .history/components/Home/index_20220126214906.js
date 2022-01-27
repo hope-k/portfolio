@@ -47,7 +47,7 @@ const Home = () => {
 
     <>
       <Box position={'relative'} ref={bgTrigger}>
-          <Background trigger={bgTrigger} />
+          <Background>
         <Container  d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} h='100vh'>
           <Flex mt={['6rem', '0']} alignItems={['flex-start', 'flex-start', 'center']} w='100%' flexDir={['column', 'column', 'row']} fontFamily={'rale'}>
             <Box mb={['3rem', '4rem', '0']} color='white' d='flex' flexDir={'column'} justifyContent={'center'} width={'100%'} position={'relative'}>

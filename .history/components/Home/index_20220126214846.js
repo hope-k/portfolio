@@ -17,6 +17,7 @@ const Home = () => {
   const nameRef = useRef(null);
   const titleRef = useRef(null);
   const bgTrigger = useRef(null);
+  const panel = useRef(null);
   useLayoutEffect(() => {
     if (typeof window === 'undefined') {
       return
