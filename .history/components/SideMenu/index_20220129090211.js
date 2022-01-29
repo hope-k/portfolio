@@ -37,7 +37,7 @@ const SideMenu = ({ open, toggleOpen }) => {
 
         <>
 
-            <Box w='85vw' className='side-menu' right={'-15rem'} display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} height={'100vh'} background={'rgba(36, 36, 36, .85)'}>
+            <Box w='85vw' className='side-menu' right={'-15rem'} display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} height={'107vh'} background={'rgba(36, 36, 36, .85)'}>
                 <Box d='flex'>
                     <Stack color='#ccc' direction={'column'} className='poiret' fontSize={'2.5rem'} letterSpacing={'4px'} >
                         <Link href='/#home' passHref scroll={false}>

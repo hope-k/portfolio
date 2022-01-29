@@ -59,8 +59,8 @@ const NavBar = ({ aboutVisible }) => {
                 <Container maxW={['21rem', '40rem', '90rem']} p={'3'} zIndex={10}>
                     <Flex alignItems={'center'} justifyContent={'space-between'}>
                         <NextLink href='/#home'>
-                            <Box borderRadius={'50%'} cursor={'pointer'}>
-                                <Text id='logo' ref={logoRef} fontSize={[25, 30]} color='#ccc' fontWeight='bold'>HK</Text>
+                            <Box w='100px' bg='white' borderRadius={'50%'} cursor={'pointer'}>
+                                <Text w='100%' id='logo' ref={logoRef} fontSize={[25, 30]} color='#ccc' fontWeight='bold'>HK</Text>
                             </Box>
                         </NextLink>
                         <Flex color='white'>
