@@ -65,13 +65,13 @@ const NavBar = ({ aboutVisible }) => {
                         </NextLink>
                         <Flex color='white'>
                             <Flex display={['none', 'inline-flex']}>
-                                <NextLink href='/#home' passHref scroll={false}>
+                                <NextLink href='/#home' passHref>
                                     <Text id='links' _hover={{ color: 'purple.300' }} transition={'all .4s ease'} mr={'6'} letterSpacing={'1.7px'} cursor={'pointer'} color={router.pathname === '/#' ? 'teal' : 'white'}>Home</Text>
                                 </NextLink>
-                                <NextLink href='/#works' scroll={false}>
+                                <NextLink href='/#works'>
                                     <Text id='links' _hover={{ color: 'purple.300' }} transition={'all .4s ease'} mr={'6'} letterSpacing={'1.7px'} cursor={'pointer'} color={router.pathname === '/#works' ? 'teal' : 'white'}>Works</Text>
                                 </NextLink>
-                                <NextLink href='/#contact' scroll={false}>
+                                <NextLink href='/#contact'>
                                     <Text id='links' _hover={{ color: 'purple.300' }} transition={'all .4s ease'} mr={'6'} letterSpacing={'1.7px'} cursor={'pointer'} color={router.pathname === '/#contact' ? 'teal' : 'white'}>Contact</Text>
                                 </NextLink>
                                 <NextLink href='/#about' scroll={false}>

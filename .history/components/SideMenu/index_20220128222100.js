@@ -41,13 +41,13 @@ const SideMenu = ({ open, toggleOpen}) => {
                         <Link href='/#home' passHref scroll={false}>
                             <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Home</Text>
                         </Link>
-                        <Link href='/#works' passHref scroll={false}>
+                        <Link href='/#works' passHref>
                             <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Works</Text>
                         </Link>
-                        <Link href='/#about' passHref scroll={false}>
+                        <Link href='/#about' passHref>
                             <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>About</Text>
                         </Link>
-                        <Link href={'/#contact'} passHref scroll={false}>
+                        <Link href={'/#contact'} passHref>
                             <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
                         </Link>
                     </Stack>
