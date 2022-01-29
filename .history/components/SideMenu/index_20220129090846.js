@@ -59,8 +59,8 @@ const SideMenu = ({ open, toggleOpen }) => {
                         </Center>
                     </Box>
                 </Box>
+            <Box display={['flex', 'none']} className='side-menu' background={'rgba(36, 36, 36, .90)'} opacity={'0'} zIndex={'9'} id='sideMenuCurtain' left='0' top='0' bottom='0' width='15vw' height='100vh' position={'absolute'}>
             </Box>
-            <Box display={['flex', 'none']} className='side-menu' background={'rgba(36, 36, 36, .90)'} opacity={'0'} zIndex={'9'} id='sideMenuCurtain' left='0' top='0' bottom='0' width='15vw' height='100vh' position={'fixed'}>
             </Box>
         </>
 
