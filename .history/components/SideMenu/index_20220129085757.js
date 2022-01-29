@@ -37,7 +37,7 @@ const SideMenu = ({ open, toggleOpen }) => {
 
         <>
 
-            <Box w='85vw' className='side-menu' right={'-15rem'} display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} height={'107vh'} background={'rgba(36, 36, 36, .85)'}>
+            <Box w='85vw' className='side-menu' right={'-15rem'} display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} height={'100vh'} background={'rgba(36, 36, 36, .85)'}>
                 <Box d='flex'>
                     <Stack color='#ccc' direction={'column'} className='poiret' fontSize={'2.5rem'} letterSpacing={'4px'} >
                         <Link href='/#home' passHref scroll={false}>
@@ -53,14 +53,14 @@ const SideMenu = ({ open, toggleOpen }) => {
                             <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
                         </Link>
                     </Stack>
-                    <Box fontWeight={400} bg='blackAlpha.300' position={'absolute'} bottom='0' h='4vh' w='100vw' left='0'>
+                    <Box fontWeight={400} bg='blackAlpha.300' position={'absolute'} bottom='0' h='5vh' w='100vw' left='0'>
                         <Center h='100%' d='flex' justifyContent={'center'} alignItems={'center'}>
                             <Text color='whiteAlpha.400'>Hope Kumordzie &copy;</Text>
                         </Center>
                     </Box>
                 </Box>
             </Box>
-            <Box display={['flex', 'none']} className='side-menu' background={'rgba(36, 36, 36, .90)'} opacity={'0'} zIndex={'9'} id='sideMenuCurtain' left='0' top='0' bottom='0' width='15vw' height='107vh' position={'absolute'}>
+            <Box display={['flex', 'none']} className='side-menu' background={'rgba(36, 36, 36, .90)'} opacity={'0'} zIndex={'9'} id='sideMenuCurtain' left='0' top='0' bottom='0' width='15vw' height='100vh' position={'absolute'}>
             </Box>
         </>
 
