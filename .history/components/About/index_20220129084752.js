@@ -1,8 +1,8 @@
-import React, { useLayoutEffect, useRef, useEffect} from 'react';
+import React, { useLayoutEffect, useRef, useEffect } from 'react';
 import { Flex, Box, Container, Text, Center } from '@chakra-ui/react';
 import { Tag } from 'antd';
 import { useInView } from 'react-intersection-observer';
-import  gsap  from "gsap";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const About = () => {
-    const [ref2, inView2] = useInView({threshold: .5})
+    const [ref2, inView2] = useInView({ threshold: .5 })
     const t1 = useRef()
     const aboutRef = useRef(null)
 
@@ -51,42 +51,43 @@ const About = () => {
     })
 
     useLayoutEffect(() => {
-         t1.current = gsap.timeline({
+        t1.current = gsap.timeline({
             defaults: {
                 stagger: 0.1,
             }
-         }).from('#aboutSection', {
+        }).from('#aboutSection', {
             y: 14,
             opacity: 0,
             duration: .8,
             ease: 'Power$.easeOut'
-        }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080', repeat: -1,repeatDelay: 2})
-        
-    },[])
+        }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080', repeat: -1, repeatDelay: 2 })
+
+    }, [])
 
     useEffect(() => {
-        if(inView2){
+        if (inView2) {
             t1.current.play()
         }
-        if(!inView2){
+        if (!inView2) {
             t1.current.reverse()
         }
     }, [inView2])
 
     return (
-        
+
 
         <Container id='about' d='flex' maxW={['21rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '8rem']} flexDir={'column'} position={'absolute'}>
-                
-                    <Text transition={'all .14s ease'}  mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='aboutSection'>ABOUT</Text>
+                    <Box bg='white'>
+                        <Text transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='aboutSection'>ABOUT</Text>
+                    </Box>
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='aboutSection' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='aboutSection'>Get to know more about me</Text>
                 </Flex>
-                <Flex ref={ref2} position='relative' top={['4rem','5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
+                <Flex ref={ref2} position='relative' top={['4rem', '5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
                     <Box maxW={'70ch'} color='#ccc'>
-                        <Text fontWeight={'700'} fontSize={['1.4rem','1.2rem']} mb='1rem' mt='3rem' className='poiret'>Hi There!</Text>
+                        <Text fontWeight={'700'} fontSize={['1.4rem', '1.2rem']} mb='1rem' mt='3rem' className='poiret'>Hi There!</Text>
                         <Text id='aboutSection' fontSize={['.95rem', '1rem']} className='poiret' letterSpacing={'1px'}>
                             I’m Hope Kumordzie and i am passionate Fullstack Web Developer. I enjoy using web technologies to build amazing modern web applications and focusing on solving problems for different niches.  I have  also provide my services to college students by getting their projects ready as a freelancer. Currently still in the university working hard to gain my degree in computer science.
                         </Text>

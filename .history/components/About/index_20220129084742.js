@@ -79,8 +79,10 @@ const About = () => {
         <Container id='about' d='flex' maxW={['21rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '8rem']} flexDir={'column'} position={'absolute'}>
-                
+                <Box>
+
                     <Text transition={'all .14s ease'}  mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='aboutSection'>ABOUT</Text>
+                </Box>
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='aboutSection' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='aboutSection'>Get to know more about me</Text>
                 </Flex>

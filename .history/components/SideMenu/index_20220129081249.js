@@ -12,9 +12,9 @@ const SideMenu = ({ open, toggleOpen }) => {
 
  
         t1.current = gsap.timeline({ paused: true, defaults: { duration: .65 } })
-            .to('#sideMenu', {  right: '0', opacity: 1, ease: 'Expo.easeInOut' })
-            .from('#sideMenuCurtain', { xPercent: -100 }, '-=.58')
-            .to('#sideMenuCurtain', { opacity: 1 }, '-=.58')
+            .to('#sideMenu', { left: 0, right: 0, opacity: 1, ease: 'Expo.easeInOut' })
+            .from('#sideMenuCurtain', { xPercent: -100 ,ease: 'Expo.easeOut'}, '-=.55')
+            .to('#sideMenuCurtain', { opacity: 1 ease: 'Expo.easeOut'}, '-=.55')
             .from('#menuLink', { duration: .75, opacity: 0, y: 9, ease: 'Expo.easeOut', stagger: { each: 0.17 } }, '-=.64')
 
 
@@ -37,7 +37,7 @@ const SideMenu = ({ open, toggleOpen }) => {
 
         <>
 
-            <Box w='85vw' className='side-menu' right={'-15rem'} display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} height={'100vh'} background={'rgba(36, 36, 36, .85)'}>
+            <Box className='side-menu' display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} right={'-15rem'} height={'100vh'} background={'rgba(36, 36, 36, .85)'}>
                 <Box d='flex'>
                     <Stack color='#ccc' direction={'column'} className='poiret' fontSize={'2.5rem'} letterSpacing={'4px'} >
                         <Link href='/#home' passHref scroll={false}>
@@ -60,7 +60,7 @@ const SideMenu = ({ open, toggleOpen }) => {
                     </Box>
                 </Box>
             </Box>
-            <Box display={['flex', 'none']} className='side-menu' background={'rgba(36, 36, 36, .90)'} opacity={'0'} zIndex={'9'} id='sideMenuCurtain' left='0' top='0' bottom='0' width='15vw' position={'absolute'}>
+            <Box opacity={'0'} zIndex={'9'} id='sideMenuCurtain' bg='red' left='0' top='0' bottom='0' width='15%' position={'absolute'}>
             </Box>
         </>
 
