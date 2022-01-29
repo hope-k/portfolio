@@ -33,8 +33,8 @@ const Home = () => {
     t1.from('#line1', { width: 0, ease: 'sine.in', duration: .8 })
       .from(text1.chars, { duration: 8, x: -15, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.3, from: 'start' } })
       .from(text2.chars, { color: 'teal', y: 10, opacity: 0, scale: 1.6, ease: "sine.out", stagger: { each: 0.09, from: 'start' }, duration: .8 }, '-=11')
-      .from(text3.chars, { y: -60, color: 'red', opacity: 0, ease: 'Bounce.easeOut', stagger: { each: 0.1, from: 'random' } }, '-=8')
-      .to(text3.chars, { color: 'white', textShadow: '0px 0px 15px #fff', ease: 'rough({strength: 5})', stagger: { each: 0.2, from: 'random' }, repeat: -1, repeatDelay: 3 }, '-=8')
+      .from(text3.chars, { y: -60, opacity: 0, ease: 'Bounce.easeOut', stagger: { each: 0.1, from: 'random' } }, '-=8')
+      .to(text3.chars, { color: 'white', textShadow: '0px 0px 15px #fff', ease: 'rough({strength: 5})', stagger: { each: 0.2, from: 'random' }, repeat: -1, repeatDelay: 5 }, '-=8')
       .from('#buttonOne', { y: -7, opacity: 0, }, '-=2')
       .from('#buttonTwo', { y: 7, opacity: 0, }, '-=2')
       .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=3')
@@ -85,7 +85,7 @@ const Home = () => {
 
       <Box d='flex' position={'relative'} bg='rgba(0 ,0 ,0, .87)' h='93vh' w='100%'>
         <Center className='poiret' justifyContent={'center'} alignItems={'center'} m='auto' position={'absolute'} width={'100%'} h='7vh' top={'0'} bg='rgba(0, 0, 0, .2)' >
-          <Text fontSize={['1.3rem', '3rem']} letterSpacing={['1rem', '2rem']} fontWeight={'900'} color='rgba(192,192,192,.07)' >
+          <Text fontSize={['1.3rem', '3rem']} letterSpacing={['1rem', '2rem']} fontWeight={'900'} color='rgba(192,192,192,.08)' >
             H.K
           </Text>
         </Center>
