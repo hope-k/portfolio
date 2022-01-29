@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scrollbar-color: teal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+#progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3.5px;
+    border: none;
+    background: transparent;
+    z-index: 11;
+}
+
+#progress::-webkit-progress-bar {
+    background: transparent;
+}
+
+#progress::-webkit-progress-value {
+    background: linear-gradient(to right, #db38b5, #30b3d4, #25cec0, #fdc741, #ff6b01, #fc4236);
+    background-attachment: fixed;
+}
+
+#progress::-moz-progress-bar {
+    background: linear-gradient(to right, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+    background-attachment: fixed;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+    border-radius: 10rem
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba($color: #000000, $alpha: .7);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: teal;
+    border-radius: 10rem;
+}
+
+.righteous {
+    font-family: 'Righteous', cursive;
+}
+.poiret{
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+.sidemenu{
+  backdrop-filter: blur(2px);
+}
