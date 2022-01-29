@@ -39,16 +39,16 @@ const SideMenu = ({ open, toggleOpen}) => {
                 <Box d='flex'>
                     <Stack color='#ccc' direction={'column'} className='poiret' fontSize={'2.5rem'} letterSpacing={'4px'} >
                         <Link href='/#home' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Home</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Home</Text>
                         </Link>
                         <Link href='/#works' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Works</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Works</Text>
                         </Link>
                         <Link href='/#about' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>About</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>About</Text>
                         </Link>
                         <Link href={'/#contact'} passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
                         </Link>
                     </Stack>
                     <Box bg='blackAlpha.300' position={'absolute'} bottom='0' h='5vh' w='100vw' left='0'>

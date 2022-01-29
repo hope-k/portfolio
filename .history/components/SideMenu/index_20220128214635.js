@@ -36,19 +36,19 @@ const SideMenu = ({ open, toggleOpen}) => {
         <>
 
             <Box className='side-menu' display={['flex', 'none']} id='sideMenu' opacity={0} alignItems={'center'} justifyContent={'center'} d='flex' position='fixed' zIndex={'9'} top={0} bottom={0} right={'-15rem'} height={'100vh'} background={'rgba(36, 36, 36, .85)'}>
-                <Box d='flex'>
+                <Box d='flex' letterSpacing={'1px'}>
                     <Stack color='#ccc' direction={'column'} className='poiret' fontSize={'2.5rem'} letterSpacing={'4px'} >
                         <Link href='/#home' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Home</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Home</Text>
                         </Link>
                         <Link href='/#works' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Works</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Works</Text>
                         </Link>
                         <Link href='/#about' passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>About</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>About</Text>
                         </Link>
                         <Link href={'/#contact'} passHref>
-                            <Text letterSpacing={'-1px'} onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
+                            <Text onClick={() => toggleOpen()} id='menuLink' transition='all .25s ease' _hover={{ pl: '1rem', color: 'purple.400' }}>Contact</Text>
                         </Link>
                     </Stack>
                     <Box bg='blackAlpha.300' position={'absolute'} bottom='0' h='5vh' w='100vw' left='0'>

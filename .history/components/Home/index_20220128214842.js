@@ -83,7 +83,7 @@ const Home = () => {
 
 
 
-      <Box d='flex' position={'relative'} bg='rgba(0 ,0 ,0, .87)' h='93vh' w='100%'>
+      <Box d='flex' position={'relative'} bg='rgba(0 ,0 ,0, .87)' h='vh' w='100%'>
         <Center className='poiret' justifyContent={'center'} alignItems={'center'} m='auto' position={'absolute'} width={'100%'} h='7vh' top={'0'} bg='rgba(0, 0, 0, .2)' >
           <Text fontSize={['1.3rem', '3rem']} letterSpacing={['1rem', '2rem']} fontWeight={'900'} color='rgba(192,192,192,.018)' >
             H.K
