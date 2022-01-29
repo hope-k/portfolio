@@ -85,8 +85,8 @@ const About = () => {
                 </Flex>
                 <Flex ref={ref2} position='relative' top={['4rem','5.4rem']} flexDir={['column', 'row']} justifyContent={'center'} w='100%' flexWrap='nowrap' alignItems={'center'}>
                     <Box maxW={'70ch'} color='#ccc'>
-                        <Text fontWeight={'700'} fontSize={['1.4rem','1.2rem']} mb='1rem' mt='3rem' className='poiret'>Hi There!</Text>
-                        <Text id='aboutSection' fontSize={['1.1rem', '1rem']} className='poiret' letterSpacing={'1px'}>
+                        <Text fontWeight={'700'} fontSize={['1.1rem','1.2rem']} mb='1rem' mt='3rem' className='poiret'>Hi There!</Text>
+                        <Text id='aboutSection' fontSize={['.8rem', '1rem']} className='poiret' letterSpacing={'1px'}>
                             I’m Hope Kumordzie and i am passionate Fullstack Web Developer. I enjoy using web technologies to build amazing modern web applications and focusing on solving problems for different niches.  I have  also provide my services to college students by getting their projects ready as a freelancer. Currently still in the university working hard to gain my degree in computer science.
                         </Text>
                         <br />
