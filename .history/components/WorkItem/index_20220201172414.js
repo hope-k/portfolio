@@ -51,7 +51,7 @@ const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link 
                 <Flex id='workTile' flexDir={'column'} alignItems={'center'} justifyContent={'center'}>
                     <Text color='#ccc' pb='1rem' mb='1rem'  style={{ borderBottom: '2px solid teal', borderBottomWidth: '1px' }}>{title}</Text>
                     <Text mb={'2rem'} className='outfit' color='#ccc' pb='2rem' maxW={'35ch'} lineHeight={'21px'}  textTransform={'capitalize'}>{description}</Text>
-                    <Box zIndex={'10'} mb='1.7rem' position='absolute' bottom='0' d='flex' justifyContent={'center'}>
+                    <Box zIndex={'10'} position='absolute' bottom='0' d='flex' justifyContent={'center'}>
                         <Link href={link} passHref >
                             <Button w='15rem' colorScheme={'teal'} variant={'outline'}>View Project</Button>
                         </Link>
