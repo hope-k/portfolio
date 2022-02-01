@@ -8,17 +8,7 @@ import gsap from 'gsap'
 const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link }) => {
 
     return (
-        <Container borderRadius={'.5rem'} background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justifyContent={'center'}>
-            <Box d='flex' width='10rem' position={'absolute'} top='0' h='.5rem' bg='teal.500' justifyContent={'space-around'} borderBottomRightRadius={'.5rem'} borderBottomLeftRadius={'.5rem'} alignItems={'center'}>
-                <Box bg='gray.600' borderRadius={'50%'} w='4px' h='4px'>
-                    
-                </Box>                
-                <Box bg='gray.600'  borderRadius={'50%'} w='4px' h='4px'>
-                    
-                </Box>
-
-
-            </Box>
+        <Container border background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justifyContent={'center'}>
             <Box d='flex' flexDir={'column'} alignItems={'center'}>
                 <Flex cursor='pointer' justifyContent={'center'} position='relative'>
                     <Image
