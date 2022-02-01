@@ -8,8 +8,8 @@ import gsap from 'gsap'
 const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link }) => {
 
     return (
-        <Container background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justifyContent={'center'}>
-            <Box d='flex' flexDir={'column'} alignItems={'center'}>
+        <Container background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'}>
+            <Box>
                 <Flex cursor='pointer' justifyContent={'center'} position='relative'>
                     <Image
                         src={laptopMock}
@@ -35,22 +35,22 @@ const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link 
                                 />
                             </Box>
                         </Box>
+                        <Flex id='workTile' flexDir={'column'} alignItems={'center'} justifyContent={'center'}>
+                            <Text color='#ccc' pb='1rem' mb='1rem' style={{ borderBottom: '2px solid teal', borderBottomWidth: '1px' }}>{title}</Text>
+                            <Text mb={'2rem'} className='outfit' color='#ccc' pb='2rem' maxW={'35ch'} lineHeight={'21px'} textTransform={'capitalize'}>{description}</Text>
+                            <Box zIndex={'10'} m='2rem' position='absolute' bottom='0' d='flex' justifyContent={'center'}>
+                                <Link href={link} passHref >
+                                    <Button w='15rem' colorScheme={'teal'} variant={'outline'}>View Project</Button>
+                                </Link>
+                            </Box>
                     </Box>
                 </Flex>
-
-                <Flex id='workTile' flexDir={'column'} alignItems={'center'} justifyContent={'center'}>
-                    <Text color='#ccc' pb='1rem' mb='1rem'  style={{ borderBottom: '2px solid teal', borderBottomWidth: '1px' }}>{title}</Text>
-                    <Text mb={'2rem'} className='outfit' color='#ccc' pb='2rem' maxW={'35ch'} lineHeight={'21px'}  textTransform={'capitalize'}>{description}</Text>
-                    <Box zIndex={'10'} m='2rem' position='absolute' bottom='0' d='flex' justifyContent={'center'}>
-                        <Link href={link} passHref >
-                            <Button w='15rem' colorScheme={'teal'} variant={'outline'}>View Project</Button>
-                        </Link>
-                    </Box>
-                </Flex>
+            </Flex>
 
 
-            </Box>
-        </Container>
+
+        </Box>
+        </Container >
     )
 }
 

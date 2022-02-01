@@ -8,8 +8,8 @@ import gsap from 'gsap'
 const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link }) => {
 
     return (
-        <Container background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justifyContent={'center'}>
-            <Box d='flex' flexDir={'column'} alignItems={'center'}>
+        <Container background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justify>
+            <Box>
                 <Flex cursor='pointer' justifyContent={'center'} position='relative'>
                     <Image
                         src={laptopMock}
