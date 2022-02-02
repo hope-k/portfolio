@@ -62,7 +62,7 @@ const CustomCursor = () => {
            
         
 
-    },[])
+    })
     useLayoutEffect(() => {
         const t2 = gsap.timeline()
         t2.to('#cursor', {

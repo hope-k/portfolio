@@ -53,7 +53,6 @@ const CustomCursor = () => {
                 t2.play(0);
             });
             document.removeEventListener('mousemove', mouseEvent);
-            t2.kill()
             t1.kill()
 
         }
@@ -62,7 +61,7 @@ const CustomCursor = () => {
            
         
 
-    },[])
+    })
     useLayoutEffect(() => {
         const t2 = gsap.timeline()
         t2.to('#cursor', {
