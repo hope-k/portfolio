@@ -72,7 +72,7 @@ const CustomCursor = () => {
             duration: .600,
             transform: 'translate(0, 0,0)'
         })
-        return () => t2.kill()
+        return () => 
     },[])
 
     return (

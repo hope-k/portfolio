@@ -57,7 +57,7 @@ const Works = () => {
         }).to(worksRef.current, { textShadow: '0px 0px 15px #008080', repeat: -1, repeatDelay: 2 })
 
 
-        return () => t1.current.kill()
+        
 
     }, [])
 

@@ -15,9 +15,10 @@ const About = () => {
     const aboutRef = useRef(null)
 
     useLayoutEffect(() => {
+        const timeline = gsap.timeline()
 
         const stageItems = gsap.utils.toArray('#stageItems')
-        gsap.set('#stage', {
+        timeline.set('#stage', {
             css: {
                 perspective: 150,
                 transformStyle: 'preserve-3d'
@@ -25,7 +26,7 @@ const About = () => {
 
         })
         stageItems.forEach((item, i) => {
-            gsap.set(item, {
+            timeline.set(item, {
                 css: {
                     rotationY: i * 360 / 8,
                     transformOrigin: "center center -420",
@@ -33,7 +34,7 @@ const About = () => {
 
                 }
             });
-            gsap.to(item, {
+            timeline.to(item, {
                 css: {
                     z: .01,
                     rotationY: '+=359',
@@ -48,8 +49,9 @@ const About = () => {
 
             })
         })
+        return () => timeline.kill()
 
-    },[])
+    })
 
     useLayoutEffect(() => {
          t1.current = gsap.timeline({

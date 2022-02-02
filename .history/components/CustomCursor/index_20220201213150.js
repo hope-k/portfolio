@@ -24,7 +24,11 @@ const CustomCursor = () => {
                 translateY: `${mouseY}px`
             })
         }
-        document.addEventListener('mousemove', mouseEvent)
+        document.addEventListener('mousemove', (event) => {
+
+        
+
+        })
 
         document.addEventListener('click', () => {
             t2.play(0);
@@ -49,10 +53,8 @@ const CustomCursor = () => {
         }, '+=.5')
 
         function clearEvents(){
-            document.removeEventListener('click', () => {
-                t2.play(0);
-            });
-            document.removeEventListener('mousemove', mouseEvent);
+            document.removeEventListener('click');
+            document.removeEventListener('mousemove');
             t2.kill()
             t1.kill()
 
@@ -72,7 +74,6 @@ const CustomCursor = () => {
             duration: .600,
             transform: 'translate(0, 0,0)'
         })
-        return () => t2.kill()
     },[])
 
     return (

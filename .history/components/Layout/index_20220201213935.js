@@ -38,7 +38,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
             return
         }
         const t1 = gsap.timeline()
-        t1.from('#layout', {
+        gsap.from('#layout', {
             opacity: 0,
             duration: 1.8,
             ease: 'Power4.easeInOut'

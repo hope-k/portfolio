@@ -49,7 +49,7 @@ const About = () => {
             })
         })
 
-    },[])
+    })
 
     useLayoutEffect(() => {
          t1.current = gsap.timeline({

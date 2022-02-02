@@ -37,7 +37,7 @@ const Background = ({ trigger }) => {
     }
     const t1 = gsap.timeline()
 
-    t1.to(backRef.current, {
+    gsap.to(backRef.current, {
       ease: 'none',
       backgroundPosition: `center ${10 / 5}px`,
       filter: 'brightness(50%)',
@@ -48,10 +48,8 @@ const Background = ({ trigger }) => {
       }
     })
 
-    return () => t1.kill()
 
-
-  },[])
+  })
 
   return (
     <>

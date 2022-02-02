@@ -48,7 +48,7 @@ const Background = ({ trigger }) => {
       }
     })
 
-    return () => t1.kill()
+    return 
 
 
   },[])

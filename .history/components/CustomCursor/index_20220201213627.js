@@ -16,7 +16,7 @@ const CustomCursor = () => {
         const t1 = gsap.timeline({ defaults: { repeat: -1, yoyo: true } })
         const rule = CSSRulePlugin.getRule('.app-cursor::after')
         function mouseEvent(event){
-            const { clientX, clientY } = event;
+            const { clientX, clientY } = e;
             const mouseX = clientX - customCursor.current.clientWidth / 2
             const mouseY = clientY - customCursor.current.clientHeight / 2
             gsap.set(customCursor.current, {
@@ -72,7 +72,6 @@ const CustomCursor = () => {
             duration: .600,
             transform: 'translate(0, 0,0)'
         })
-        return () => t2.kill()
     },[])
 
     return (

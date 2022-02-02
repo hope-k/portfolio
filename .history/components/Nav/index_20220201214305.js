@@ -49,8 +49,7 @@ const NavBar = ({ aboutVisible }) => {
             }
         })
 
-        return () => navAnimation.kill()
-        
+        return () => nav
     }, [])
 
 

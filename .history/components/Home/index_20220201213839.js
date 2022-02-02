@@ -42,7 +42,7 @@ const Home = () => {
       .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=3')
 
 
-    return () => t1.kill()
+    
   }, [])
 
 

@@ -15,16 +15,17 @@ const CustomCursor = () => {
         const t2 = gsap.timeline({paused: true, defaults: {duration: .25, ease: 'none'}})
         const t1 = gsap.timeline({ defaults: { repeat: -1, yoyo: true } })
         const rule = CSSRulePlugin.getRule('.app-cursor::after')
-        function mouseEvent(event){
-            const { clientX, clientY } = event;
+        document.addEventListener('mousemove', (event) => {
+            const {clientX, clientY} = event;
             const mouseX = clientX - customCursor.current.clientWidth / 2
             const mouseY = clientY - customCursor.current.clientHeight / 2
             gsap.set(customCursor.current, {
                 translateX: `${mouseX}px`,
                 translateY: `${mouseY}px`
             })
-        }
-        document.addEventListener('mousemove', mouseEvent)
+        
+
+        },[])
 
         document.addEventListener('click', () => {
             t2.play(0);
@@ -49,12 +50,6 @@ const CustomCursor = () => {
         }, '+=.5')
 
         function clearEvents(){
-            document.removeEventListener('click', () => {
-                t2.play(0);
-            });
-            document.removeEventListener('mousemove', mouseEvent);
-            t2.kill()
-            t1.kill()
 
         }
 
@@ -72,7 +67,6 @@ const CustomCursor = () => {
             duration: .600,
             transform: 'translate(0, 0,0)'
         })
-        return () => t2.kill()
     },[])
 
     return (

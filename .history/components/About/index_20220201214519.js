@@ -15,6 +15,7 @@ const About = () => {
     const aboutRef = useRef(null)
 
     useLayoutEffect(() => {
+        const timeline = gsap.timeline()
 
         const stageItems = gsap.utils.toArray('#stageItems')
         gsap.set('#stage', {
@@ -33,7 +34,7 @@ const About = () => {
 
                 }
             });
-            gsap.to(item, {
+            timeline.to(item, {
                 css: {
                     z: .01,
                     rotationY: '+=359',

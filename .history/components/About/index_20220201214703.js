@@ -15,6 +15,7 @@ const About = () => {
     const aboutRef = useRef(null)
 
     useLayoutEffect(() => {
+        const timeline = gsap.timeline()
 
         const stageItems = gsap.utils.toArray('#stageItems')
         gsap.set('#stage', {
@@ -48,8 +49,9 @@ const About = () => {
 
             })
         })
+        return () => timeline.kill()
 
-    },[])
+    })
 
     useLayoutEffect(() => {
          t1.current = gsap.timeline({

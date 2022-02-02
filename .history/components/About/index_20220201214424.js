@@ -49,7 +49,7 @@ const About = () => {
             })
         })
 
-    },[])
+    })
 
     useLayoutEffect(() => {
          t1.current = gsap.timeline({
@@ -63,7 +63,7 @@ const About = () => {
             ease: 'Power$.easeOut'
         }).to(aboutRef.current, { textShadow: '0px 0px 15px #008080', repeat: -1,repeatDelay: 2})
 
-        return  () => t1.current.kill()
+        return  () => 
         
     },[])
 

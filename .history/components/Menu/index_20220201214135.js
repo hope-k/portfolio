@@ -54,7 +54,7 @@ const Menu = ({ open }) => {
         t1.from('#menu', { x: -15, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.17, from: 'end' } })
 
 
-        return () => t1.kill()
+        return ()
     },[])
     return (
         <>
