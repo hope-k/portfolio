@@ -125,7 +125,7 @@ html {
     position: fixed;
     transform: translate3d(0, 0, 0);
     border: 1.5px solid white;
-    transition: all 220ms ease-out;
+    transition: all 10ms ease-out;
     
 }
 .app-cursor::after{
@@ -139,7 +139,7 @@ html {
     border: 8px solid gray;
     top: -1px;
     left: -1px;
-    transition: all 220ms ease-out;
+    transition: all 100ms ease-out;
 
 
 
