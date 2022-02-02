@@ -12,8 +12,6 @@ import Link from 'next/link'
 import Works from '../Works'
 
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -43,7 +41,7 @@ const Home = () => {
       .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=3')
 
 
-    return () => t1.kill();
+    return () => t1.kill()
   }, [])
 
 
@@ -64,7 +62,7 @@ const Home = () => {
 
       <Box position={'relative'} ref={bgTrigger} id='home'>
         <Background trigger={bgTrigger} />
-        <Container d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} minH='100vh'>
+        <Container d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} h='100vh'>
           <Flex mt={['6rem', '0']} alignItems={['flex-start', 'flex-start', 'center']} w='100%' flexDir={['column', 'column', 'row']} fontFamily={'rale'}>
             <Box mb={['3rem', '4rem', '0']} color='white' d='flex' flexDir={'column'} justifyContent={'center'} width={'100%'} position={'relative'}>
               <hr id='line1' style={{ display: 'inline-block', width: '2rem', position: 'relative', left: '3rem' }} />
@@ -87,7 +85,7 @@ const Home = () => {
         </Container>
       </Box>
       <section>
-        <Box d='flex' position={'relative'}  w='100%' minH={'107vh'}>
+        <Box d='flex' position={'relative'} h='107vh' w='100%'>
           <div className='aboutbg'></div>
           <About />
         </Box>
