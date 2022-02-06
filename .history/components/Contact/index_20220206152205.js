@@ -68,16 +68,16 @@ const Contact = () => {
             t1.current.play()
         }
         if (!inView) {
-            t1.current.reverse()
+            t1.current.()
         }
     }, [inView])
 
     return (
-        <Container ref={ref} zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' minH='115vh' justifyContent={'center'} alignItems={'center'}>
+        <Container zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' minH='115vh' justifyContent={'center'} alignItems={'center'}>
             <Box alignItems={'center'} justifyContent={'center'} w='100%' d='flex'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '6.5rem']} flexDir={'column'} position={'absolute'}>
                     <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='contactSection' ref={contactRef}>Contact</Text>
-                    <Text  fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='contactSection'> Say Hi </Text>
+                    <Text ref={ref} fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='contactSection'> Say Hi </Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='contactSection' maxW={['25ch','100%']}> Submit the form below and i&apos;ll get back to you as soon as posible </Text>
                 </Flex>
                 <Flex flexDir={['column','row']} justifyContent={'space-around'} w='100%' pt={'15rem'}>
