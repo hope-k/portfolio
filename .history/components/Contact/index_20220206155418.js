@@ -76,7 +76,7 @@ const Contact = () => {
         <Container ref={ref} zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' minH='115vh' justifyContent={'center'} alignItems={'center'}>
             <Box alignItems={'center'} justifyContent={'center'} w='100%' d='flex'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '6.5rem']} flexDir={'column'} position={'absolute'}>
-                    <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='contactSection' ref={contactRef}>CONTACT</Text>
+                    <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='contactSection' ref={contactRef}>CON</Text>
                     <Text  fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='contactSection'> Say Hi </Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='contactSection' maxW={['25ch','100%']}> Submit the form below and i&apos;ll get back to you as soon as posible </Text>
                 </Flex>
