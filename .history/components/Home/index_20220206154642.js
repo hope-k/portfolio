@@ -62,7 +62,7 @@ const Home = () => {
 
     <>
       <NavBar />
-      <Box position={'relative'} ref={bgTrigger} id='home' h='100%'>
+      <Box position={'relative'} ref={bgTrigger} id='home'>
         <Background trigger={bgTrigger} />
         <Container d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} minH='100vh'>
           <Flex mt={['6rem', '0']} alignItems={['flex-start', 'flex-start', 'center']} w='100%' flexDir={['column', 'column', 'row']} fontFamily={'rale'}>
@@ -91,6 +91,7 @@ const Home = () => {
           <About />
         </Box>
 
+      <section>
         <Box d='flex' position={'relative'} w='100%'>
           <div className='workbg' ></div>
           <Center className='poiret' justifyContent={'center'} alignItems={'center'} m='auto' position={'absolute'} width={'100%'} h='7vh' top={'0'} bg='rgba(0, 0, 0, .2)' >
@@ -100,13 +101,15 @@ const Home = () => {
           </Center>
           <Works />
         </Box>
-      
+      </section>
 
 
+      <section>
         <Box position={'relative'}>
           <div className='contactbg' ></div>
           <Contact/>
         </Box>
+      </section>
 
 
 
