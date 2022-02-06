@@ -63,7 +63,7 @@ const Contact = () => {
 
     }, [])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (inView) {
             t1.current.play()
         }
@@ -75,7 +75,7 @@ const Contact = () => {
     return (
         <Container ref={ref} zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' justifyContent={'center'} alignItems={'center'} h='100%'>
             <Box alignItems={'center'} justifyContent={'center'} w='100%' d='flex'>
-                <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['2rem', '3.5rem']} flexDir={'column'} position={'absolute'}>
+                <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '4.5rem']} flexDir={'column'} position={'absolute'}>
                     <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='contactSection' ref={contactRef}>CONTACT</Text>
                     <Text  fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='contactSection'> Say Hi </Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='contactSection' maxW={['25ch','100%']}> Submit the form below and i&apos;ll get back to you as soon as posible </Text>
@@ -115,7 +115,7 @@ const Contact = () => {
                         </form>
 
                     </Flex>
-                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']} mb={['5rem', '0rem']}>
+                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']}>
                         <Box id='contactSection' borderBottom='1px solid teal' borderBottomWidth={'.3rem'} pb='5px'>
                             <Text color='#ccc' fontWeight={'700'} id='contactSection'>PHONE</Text>
                             <Text mt={'.4rem'} color='gray' id='contactSection'>Mobile +233546075591</Text>

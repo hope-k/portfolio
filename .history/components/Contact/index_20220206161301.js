@@ -63,7 +63,7 @@ const Contact = () => {
 
     }, [])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (inView) {
             t1.current.play()
         }
@@ -73,9 +73,9 @@ const Contact = () => {
     }, [inView])
 
     return (
-        <Container ref={ref} zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' justifyContent={'center'} alignItems={'center'} h='100%'>
+        <Container ref={ref} zIndex={'1'} id='contact' d='flex' maxW={['20rem', '30rem', '70rem']} w='100%' minH='115vh' justifyContent={'center'} alignItems={'center'}>
             <Box alignItems={'center'} justifyContent={'center'} w='100%' d='flex'>
-                <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['2rem', '3.5rem']} flexDir={'column'} position={'absolute'}>
+                <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '6.5rem']} flexDir={'column'} position={'absolute'}>
                     <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='contactSection' ref={contactRef}>CONTACT</Text>
                     <Text  fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='contactSection'> Say Hi </Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='contactSection' maxW={['25ch','100%']}> Submit the form below and i&apos;ll get back to you as soon as posible </Text>
@@ -110,12 +110,12 @@ const Contact = () => {
                                     onChange={(e) => setMessage(e.target.value)}
                                     border='none' focusBorderColor='teal.400' resize={'vertical'} bg='black' />
 
-                                <Button id='contactSection' disabled={(!name || !email || !message) ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
+                                <Button id='contactSection' disabled={!name || !email && !message ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
                             </FormControl>
                         </form>
 
                     </Flex>
-                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']} mb={['5rem', '0rem']}>
+                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']}>
                         <Box id='contactSection' borderBottom='1px solid teal' borderBottomWidth={'.3rem'} pb='5px'>
                             <Text color='#ccc' fontWeight={'700'} id='contactSection'>PHONE</Text>
                             <Text mt={'.4rem'} color='gray' id='contactSection'>Mobile +233546075591</Text>

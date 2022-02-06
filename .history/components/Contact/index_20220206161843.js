@@ -63,7 +63,7 @@ const Contact = () => {
 
     }, [])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (inView) {
             t1.current.play()
         }
@@ -115,7 +115,7 @@ const Contact = () => {
                         </form>
 
                     </Flex>
-                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']} mb={['5rem', '0rem']}>
+                    <Flex flexDir='column' justifyContent={'space-between'} h={['20vh', '30vh']} pb={['2rem', '0rem']}>
                         <Box id='contactSection' borderBottom='1px solid teal' borderBottomWidth={'.3rem'} pb='5px'>
                             <Text color='#ccc' fontWeight={'700'} id='contactSection'>PHONE</Text>
                             <Text mt={'.4rem'} color='gray' id='contactSection'>Mobile +233546075591</Text>

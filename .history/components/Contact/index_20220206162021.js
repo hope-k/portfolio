@@ -63,7 +63,7 @@ const Contact = () => {
 
     }, [])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (inView) {
             t1.current.play()
         }
