@@ -66,6 +66,7 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
         <>
 
 
+
             <ToastContainer />
             <progress id='progress' max='100' value='0'></progress>
             <div id='layout'>

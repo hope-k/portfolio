@@ -14,7 +14,7 @@ export const sendEmail = async ({name, message, from }) => {
     const messageReady = `${message} \n Email: ${from}`
     await nodemailerMailgun.sendMail({
         from: 'hopek <noreply@hopek.com>',
-        to: 'hopekumordzie@gmail.com',
+        to: 'hopekumordzie@gmail',
         subject: `PORTFOLIO JOB FROM ${name}`,
         text: messageReady
         

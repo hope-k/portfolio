@@ -4,9 +4,16 @@ import emotionCache from '../lib/emotion-cache'
 import { CacheProvider } from "@emotion/react";
 import { extendTheme } from '@chakra-ui/react'
 import '../styles/globals.scss'
+import "@fontsource/raleway"
 import 'antd/dist/antd.css';
 
+const theme = extendTheme({
+  fonts: {
+    rale: 'Raleway',
+    
 
+  },
+})
 function MyApp({ Component, pageProps }) {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -21,7 +28,7 @@ function MyApp({ Component, pageProps }) {
 
 
       <CacheProvider value={emotionCache}>
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
           {
             loaded &&
               <Component {...pageProps} /> 

@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 
 
       <CacheProvider value={emotionCache}>
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
           {
             loaded &&
               <Component {...pageProps} /> 

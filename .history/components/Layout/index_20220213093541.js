@@ -64,6 +64,10 @@ const Layout = ({ title = 'Hope Kumordzie', children }) => {
 
     return (
         <>
+            //{
+                //isMobile ? <CustomCursor /> : null
+            //}
+
 
 
             <ToastContainer />
