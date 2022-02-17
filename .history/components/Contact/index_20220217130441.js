@@ -110,7 +110,7 @@ const Contact = () => {
                                     onChange={(e) => setMessage(e.target.value)}
                                     border='none' focusBorderColor='teal.400' resize={'vertical'} bg='black' />
 
-                                <Button disabled={(!name || !email || !message) ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
+                                <Button id='contactSection' disabled={(!name || !email || !message) ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
                             </FormControl>
                         </form>
 
@@ -125,7 +125,7 @@ const Contact = () => {
                             <Text id='contactSection' mt={'.4rem'} color='gray'>hopekumordzie@gmail.com</Text>
                         </Box>
 
-                        <Box id='contactSection' borderBottom='1px solid teal' borderBottomWidth={'.3rem'} pb='5px' >
+                        <Box  borderBottom='1px solid teal' borderBottomWidth={'.3rem'} pb='5px' >
                             <Text id='contactSection' color='#ccc' fontWeight={'700'}> ADDRESS </Text>
                             <Text id='contactSection' mt={'.4rem'} color='gray'>Madina, Accra</Text>
                         </Box>

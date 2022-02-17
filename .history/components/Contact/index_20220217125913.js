@@ -110,7 +110,7 @@ const Contact = () => {
                                     onChange={(e) => setMessage(e.target.value)}
                                     border='none' focusBorderColor='teal.400' resize={'vertical'} bg='black' />
 
-                                <Button disabled={(!name || !email || !message) ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
+                                <Button id='contactSection' disabled={(name === '' || email === ''|| !message) ? true : false} type='submit' _hover={{ color: 'white', bg: 'teal', border: 'teal' }} my='2rem' variant={'outline'} colorScheme={'teal'}>Submit</Button>
                             </FormControl>
                         </form>
 
