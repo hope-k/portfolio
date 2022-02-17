@@ -53,7 +53,7 @@ const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link 
                     <Text mb={'2rem'} pt='1rem' className='outfit' color='#ccc' pb='2rem' maxW={'35ch'} lineHeight={'21px'}  textTransform={'capitalize'} alignItems={'center'}>{description}</Text>
                     <Box zIndex={'10'}  pb='1rem' position='absolute' bottom='0' d='flex' justifyContent={'center'}>
                         <Link href={link} passHref >
-                            <Button w={['14.8rem','19.6rem']} colorScheme={'teal'} variant={'outline'}>View Project</Button>
+                            <Button p='1.5rem' w={['14.8rem','19.6rem']} colorScheme={'teal'} variant={'outline'}>View Project</Button>
                         </Link>
                     </Box>
                 </Flex>
