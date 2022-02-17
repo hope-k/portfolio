@@ -103,7 +103,7 @@ const Home = () => {
       
 
 
-      <Box position={'relative'} minH={['60rem', '45rem']}>
+        <Box position={'relative'} h='100%'>
           <div className='contactbg' ></div>
           <Contact/>
         </Box>
