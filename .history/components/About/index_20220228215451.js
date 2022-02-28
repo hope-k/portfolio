@@ -92,7 +92,7 @@ const About = () => {
                     <Box maxW={'70ch'} color='#ccc'>
                         <Text fontWeight={'700'} fontSize={['1.4rem','1.2rem']} mb='1rem' mt='3rem' className='poiret'>Hi There!</Text>
                         <Text id='aboutSection' fontSize={['.95rem', '.9rem']} className='outfit' letterSpacing={'1px'}>
-                            I’m Hope Kumordzie and i am passionate Fullstack Web Developer. I enjoy using web technologies to build amazing modern fullstack web applications and RESTful API that focus on solving problems for different niches.  I also services as a freelancer. I am currently still in the university working hard to obtain my degree in computer science.
+                            I’m Hope Kumordzie and i am passionate Fullstack Web Developer. I enjoy using web technologies to build amazing modern fullstack web applications and RESTful API that focus on solving problems for different niches.  I also provide my services to college students by getting their projects ready as a freelancer. Currently still in the university working hard to gain my degree in computer science.
                         </Text> 
                         <br />
                         <Text id='aboutSection' fontSize={['.95rem', '.9rem']} className='outfit' letterSpacing={'1px'}>I would love to hear from you. Whether its a project, job or opportunity at something great. Feel free to contact me</Text>
