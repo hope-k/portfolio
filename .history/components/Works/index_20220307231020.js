@@ -76,7 +76,7 @@ const Works = () => {
     }, [inView])
 
     return (
-        <Container id='works' d='flex' maxW={['23rem', '30rem', '70rem']} w='100%' justifyContent={'center'} py='2rem'>
+        <Container id='works' d='flex' maxW={['23rem', '30rem', '70rem']} w='100%' justifyContent={'center'} py='5rem'>
             <Box alignItems={'center'} justifyContent={'center'} w='100%' d='flex'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '6.5rem']} flexDir={'column'} position={'absolute'}>
                     <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' id='worksSection' ref={worksRef}>WORKS</Text>

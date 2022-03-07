@@ -8,7 +8,7 @@ import gsap from 'gsap'
 const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link }) => {
 
     return (
-        <Container borderRadius={'.5rem'} background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem'  position={'relative'} justifyContent={'center'}>
+        <Container borderRadius={'.5rem'} background={'rgba(36, 36, 36, .35)'} zIndex={'1'} d='flex' m='1rem' h='95vh' position={'relative'} justifyContent={'center'}>
             <Box d='flex' width='10rem' position={'absolute'} top='0' h='.5rem' bg='teal.500' justifyContent={'space-around'} borderBottomRightRadius={'.5rem'} borderBottomLeftRadius={'.5rem'} alignItems={'center'}>
                 <Box bg='gray.600' borderRadius={'50%'} w='4px' h='4px'>
                     
@@ -51,7 +51,7 @@ const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link 
                 <Flex id='workTile' flexDir={'column'} alignItems={'center'} justifyContent={'center'}>
                     <Text color='#ccc'  pb='1rem'  style={{ borderBottom: '2px solid teal', borderBottomWidth: '1px' }}>{title}</Text>
                     <Text pt='1rem' className='outfit' color='#ccc' py='2rem' maxW={'35ch'} lineHeight={'21px'}  textTransform={'capitalize'} alignItems={'center'}>{description}</Text>
-                    <Box my='2rem' zIndex={'10'}  d='flex' justifyContent={'center'}>
+                    <Box py='2rem' zIndex={'10'}  position='rela' bottom='0' d='flex' justifyContent={'center'}>
                         <Link href={link} passHref >
                             <Button w={['14.8rem','19.6rem']} colorScheme={'teal'} variant={'outline'}>View Project</Button>
                         </Link>

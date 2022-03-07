@@ -78,7 +78,7 @@ const About = () => {
     return (
         
 
-        <Container id='about' d='flex' maxW={['21rem', '30rem', '70rem']}>
+        <Container id='about' d='flex' maxW={['25rem', '30rem', '70rem']}>
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '8rem']} flexDir={'column'} position={'absolute'}>
 
