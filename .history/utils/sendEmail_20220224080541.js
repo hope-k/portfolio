@@ -1,7 +1,7 @@
 import sendGrid from '@sendgrid/mail'
 
 export const sendEmail = async ({ name, from, message }) => {
-    sendGrid.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
+    sendGrid.setApiKey(process.env.SENDGRID_API_KEY)
     const messageReady = `${message} \n Email: ${from}`
 
     sendGrid.send({
