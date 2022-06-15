@@ -121,8 +121,7 @@ const About = () => {
                                 <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='orange'>HTML5</Tag>
                                 <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='pink'>CSS/SCSS</Tag>
                                 <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='gold'>GIT</Tag>
-                                <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='purple'>REDUX TOOLKIT</Tag>
-                                <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='error'>PHP LARAVEL</Tag>
+                                <Tag id='aboutSection' style={{ marginBottom: '10px', fontWeight: '620' }} color='purple'>REDUX </Tag>
                             </Box>
 
                         </Box>
