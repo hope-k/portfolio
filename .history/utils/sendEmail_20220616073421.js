@@ -12,7 +12,7 @@ export const sendEmail = async ({ name, from, message }) => {
             text: messageReady
         })
     }catch(err){
-        console.log('Error: ', err.message)
+        console.log('Error: ',err.message)
     }
 }
 

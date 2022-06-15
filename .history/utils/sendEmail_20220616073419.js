@@ -11,8 +11,8 @@ export const sendEmail = async ({ name, from, message }) => {
             subject: `Portfolio Job From ${name}`,
             text: messageReady
         })
-    }catch(err){
-        console.log('Error: ', err.message)
+    }catch(){
+        console.log('Error: ',err.message)
     }
 }
 

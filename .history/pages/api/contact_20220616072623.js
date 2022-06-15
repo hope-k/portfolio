@@ -7,14 +7,13 @@ const handler = nc();
 
 handler.post(async (req, res) => {
     try {
-        console.log(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
         const { email, name, message } = req.body
         await sendEmail({from: email, name: name, message: message})
         res.status(200).json({
             success: true
         })
     } catch (err) {
-        console.log('Error: ',err.message)
+        console.log('',err.message)
     }
 })
 export default handler;
