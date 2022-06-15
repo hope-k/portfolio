@@ -8,10 +8,14 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
+    scrollbar-color: teal;
 
 }
 
+html {
+    scroll-behavior: smooth;
+    
+}
 
 #progress {
     position: fixed;
@@ -29,7 +33,7 @@ body {
 
 #progress::-webkit-progress-bar {
     background: transparent;
-
+    
 }
 
 #progress::-webkit-progress-value {
@@ -91,7 +95,6 @@ body {
 
 
 }
-
 .contactbg {
     background: radial-gradient(circle, rgb(248, 6, 111) 0%, rgb(47, 173, 211) 100%);
     filter: brightness(12.5%);
@@ -134,10 +137,9 @@ body {
     transform: translate3d(0, 0, 0);
     border: 1.5px dashed white;
     transition: all 220ms linear;
-
+    
 }
-
-.app-cursor::after {
+.app-cursor::after{
     content: '';
     width: 30px;
     height: 30px;

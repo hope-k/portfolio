@@ -86,7 +86,7 @@ const Home = () => {
           </Flex>
         </Container>
       </Box>
-
+//
       <Box d='flex' position={'relative'} w='100%' minH={'100%'} py='5rem'>
         <div className='aboutbg'></div>
         <About />

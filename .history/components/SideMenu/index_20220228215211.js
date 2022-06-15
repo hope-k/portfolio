@@ -71,5 +71,3 @@ const SideMenu = ({ open, toggleOpen }) => {
 };
 
 export default SideMenu;
-
-

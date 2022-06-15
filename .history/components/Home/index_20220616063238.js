@@ -60,7 +60,7 @@ const Home = () => {
 
   return (
 
-    <Box overflowX={'hidden'}>
+    <Box >
       <NavBar />
       <Box position={'relative'} ref={bgTrigger} id='home'>
         <Background trigger={bgTrigger} />

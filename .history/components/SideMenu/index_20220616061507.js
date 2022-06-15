@@ -73,3 +73,4 @@ const SideMenu = ({ open, toggleOpen }) => {
 export default SideMenu;
 
 
+//create a fade in animation with gsap

@@ -60,9 +60,9 @@ const Home = () => {
 
   return (
 
-    <Box overflowX={'hidden'}>
+    <>
       <NavBar />
-      <Box position={'relative'} ref={bgTrigger} id='home'>
+      <Box position={'relative'} ref={bgTrigger} id='home' h='100'>
         <Background trigger={bgTrigger} />
         <Container d='flex' justifyContent='center' alignItems={'center'} maxW={['21rem', '30rem', '70rem']} minH='100vh'>
           <Flex mt={['6rem', '0']} alignItems={['flex-start', 'flex-start', 'center']} w='100%' flexDir={['column', 'column', 'row']}>
@@ -86,32 +86,31 @@ const Home = () => {
           </Flex>
         </Container>
       </Box>
+        <Box d='flex' position={'relative'} w='100%' minH={'100%'} py='5rem'>
+          <div className='aboutbg'></div>
+          <About />
+        </Box>
 
-      <Box d='flex' position={'relative'} w='100%' minH={'100%'} py='5rem'>
-        <div className='aboutbg'></div>
-        <About />
-      </Box>
-
-      <Box d='flex' position={'relative'} w='100%'>
-        <div className='workbg' ></div>
-        <Center className='poiret' justifyContent={'center'} alignItems={'center'} m='auto' position={'absolute'} width={'100%'} h='7vh' top={'0'} bg='rgba(0, 0, 0, .2)' >
-          <Text fontSize={['1.3rem', '3rem']} letterSpacing={['1rem', '2rem']} fontWeight={'900'} color='rgba(192,192,192,.07)' >
-            H.K
-          </Text>
-        </Center>
-        <Works />
-      </Box>
-
+        <Box d='flex' position={'relative'} w='100%'>
+          <div className='workbg' ></div>
+          <Center className='poiret' justifyContent={'center'} alignItems={'center'} m='auto' position={'absolute'} width={'100%'} h='7vh' top={'0'} bg='rgba(0, 0, 0, .2)' >
+            <Text fontSize={['1.3rem', '3rem']} letterSpacing={['1rem', '2rem']} fontWeight={'900'} color='rgba(192,192,192,.07)' >
+              H.K
+            </Text>
+          </Center>
+          <Works />
+        </Box>
+      
 
 
       <Box position={'relative'} minH={['60rem', '45rem']}>
-        <div className='contactbg' ></div>
-        <Contact />
-      </Box>
+          <div className='contactbg' ></div>
+          <Contact/>
+        </Box>
 
 
 
-    </Box>
+    </>
 
   );
 };
