@@ -8,11 +8,11 @@ export const sendEmail = async ({ name, from, message }) => {
         sendGrid.send({
             from: 'hopekumordzie@gmail.com',
             to: 'officialhopek42@gmail.com',
-            subject: `Portfolio Job From ${name}`,
+            subject: `Portfolio Job From ${name} `,
             text: messageReady
         })
     }catch(err){
-        console.log('Error: ', err.message)
+        console.log('Errors: ', err.message)
     }
 }
 
