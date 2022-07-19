@@ -33,6 +33,8 @@ const Home = () => {
     const text2 = new SplitType(nameRef.current);
     const text3 = new SplitType(titleRef.current);
 
+
+
     const t1 = gsap.timeline({ defaults: { duration: 1 } });
     t1.from('#line1', { width: 0, ease: 'sine.in', duration: .8 })
       .from(text1.chars, { duration: 8, x: -15, opacity: 0, ease: 'Power0.ease', stagger: { each: 0.3, from: 'start' } })
@@ -41,7 +43,10 @@ const Home = () => {
       .to(text3.chars, { color: 'white', textShadow: '0px 0px 15px #fff', ease: 'rough({strength: 5})', stagger: { each: 0.2, from: 'random' }, repeat: -1, repeatDelay: 3 }, '-=8')
       .from('#buttonOne', { y: -7, opacity: 0, }, '-=2')
       .from('#buttonTwo', { y: 7, opacity: 0, }, '-=2')
-      .from('#line2', { width: 0, borderTop: '0px solid teal', ease: 'sine.in', duration: .8, borderTopColor: 'teal' }, '-=3')
+      .from('#line2', { width: 0, ease: 'Bounce.easeOut', duration: 3, backgroundColor: 'purple' })
+
+    gsap.to('#brac', { color: 'yellow', background: 'yellow' })
+
 
 
     return () => t1.kill();
@@ -70,9 +75,16 @@ const Home = () => {
               <hr id='line1' style={{ display: 'inline-block', width: '2rem', position: 'relative', left: '3rem' }} />
               <Text className='poiret' maxW={'100%'} color='teal' fontSize='1.4rem' ml='2rem' ref={introRef}>HELLO THERE,</Text>
               <Text color='#ccc' className='righteous' letterSpacing={'-2.2px'} fontWeight={['600', '700']} fontSize={['2.3rem', '4.5rem']} mt={['1rem', '2rem', '0rem']} ref={nameRef}>I&apos;m Hope Kumordzie.</Text>
-              <Text color='rgba(192,192,192,.3)' className='poiret' fontWeight={['500', '800']} fontSize={'2.5rem'} ref={titleRef}> A FullStack Web Developer &lt;/&gt; </Text>
-              <Box display={['none', 'inline-block']}>
-                <hr id='line2' style={{ display: 'inline-block', width: '20rem', position: 'absolute', bottom: '-1rem', left: '5rem', borderTop: '.5px solid yellow' }} />
+              <Box mt={['1rem']} position={'relative'} border='1px' borderColor='teal' padding='1rem' borderRadius={'20px'} maxW='38rem' minH={'12rem'}>
+                <Flex position={'absolute'} right='0' mr='1rem' top='.5rem'>
+                  <Box borderRadius={'50%'} border='1px' borderColor='#FF605C' backgroundColor={'#FF605C'} h='1rem' w='1rem'></Box>
+                  <Box borderRadius={'50%'} border='1px' mx={'3px'} borderColor='#FFBD44' backgroundColor='#FFBD44' h='1rem' w='1rem'></Box>
+                  <Box borderRadius={'50%'} border='1px' borderColor='#00CA4E' h='1rem' backgroundColor='#00CA4E' w='1rem'></Box>
+                </Flex>
+                <Text overflowWrap={'anywhere'} maxW={'30rem'} id='title' color='rgba(192,192,192,.3)' className='poiret' fontWeight={['500', '800']} fontSize={['2rem', '2.5rem']} ref={titleRef}> A FullStack Web Developer &lt; /&gt; <Box fontSize={'1rem'}>console.log<Box id='brac'>(</Box>&quot; Welcome User&quot;<Box id='brac'>)</Box></Box> </Text>
+              </Box>
+              <Box>
+                <Box w={['19rem', '27rem', '38rem']} background={'teal'} h='1px' id='line2' style={{ display: 'inline-block', position: 'absolute', bottom: '-1rem', left: '0rem' }} />
               </Box>
             </Box>
             <Box d='inline-block' className='poiret'>

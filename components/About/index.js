@@ -82,7 +82,7 @@ const About = () => {
             <Flex alignItems={'center'} justifyContent={'center'} w='100%' id='page'>
                 <Flex className='poiret' alignItems={'center'} justifyContent={'center'} top={['3rem', '8rem']} flexDir={'column'} position={'absolute'}>
 
-                    <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='aboutSection'>ABOUT</Text>
+                    <Text letterSpacing={'2px'} transition={'all .14s ease'} mb='.3rem' fontWeight={'bold'} color='teal' ref={aboutRef} id='aboutSection' border='1px' padding='3px' borderRadius='10px'>ABOUT</Text>
                     <Text fontWeight={'800'} fontSize={'2.3rem'} color='#ccc' id='aboutSection' >Personal Info</Text>
                     <Text fontWeight={'600'} mb='1rem' color='#ccc' id='aboutSection'>Get to know more about me</Text>
                 </Flex>

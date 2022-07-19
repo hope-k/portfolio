@@ -150,8 +150,15 @@ body {
     left: -1px;
     transition: all 220ms ease-out;
 
-
-
-
-
 }
+#left-side,
+#top-side,
+#right-side,
+#bottom-side {
+    position: absolute;
+    background: none transparent;
+    width: 0px;
+    height: 0px;
+}
+
+
