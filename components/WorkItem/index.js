@@ -32,12 +32,12 @@ const WorkItem = ({ title, description, laptopMock, phoneMock, phoneImage, link,
                     </Box>
                     {
                         (laptopMock && laptopImage) && (
-                            <Box position={'absolute'} top='4rem'>
+                            <Box position={'absolute'} top={['2.5rem','4rem']} w={['181px','230px']} h={['110px','150']}>
                                 <Image
                                     src={laptopImage}
                                     alt='laptop'
-                                    width={230}
-                                    height={150}
+                                    layout='fill'
+                
                                 />
                             </Box>
                         )
