@@ -35,7 +35,7 @@ const projects = [
                 Qqick is a basic chat app which uses websocket for real-time messages. It Allows users to chat with each other using a simple chat room. Users can also create a group chat room and send messages to a group chat room.
                 Simple features like adding a user to a group chat room if group admin, removing a user from a group chat room if group admin, a live typing indicator, live notification stored in
                 database if user is offline  
-                Web technologies used in this project - SOCKET IO, NEXT JS, CHATSCOPE.IO UI, MONGODB, TAILWIND CSS
+                Web technologies used in this project - SOCKET IO, NEXT JS, NODE AND EXPRESS JS(API), CHATSCOPE.IO UI, MONGODB, TAILWIND CSS
             `,
         link: 'https://qqick.vercel.app/',
         key: 2
