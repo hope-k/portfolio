@@ -21,7 +21,7 @@ const SvgBg = styled.div`
   transition: all .5s ease;
   background-image:
     linear-gradient(to bottom, rgba(245, 246, 252, .1), rgba(117, 19, 93, .6)),
-    url('https://res.cloudinary.com/hopekumordzie/image/upload/v1642989342/abstract-background-with-a-modern-tech-low-poly-design-free-vector_vitgkf.jpg');
+    url('https://res.cloudinary.com/hopekumordzie/image/upload/v1658379115/i_d6w9tm.jpg');
 
 
 `

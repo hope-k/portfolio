@@ -41,9 +41,9 @@ const Home = () => {
       .from(text2.chars, { color: 'teal', y: 10, opacity: 0, scale: 1.6, ease: "sine.out", stagger: { each: 0.09, from: 'start' }, duration: .8 }, '-=11')
       .from(text3.chars, { y: -60, color: 'red', opacity: 0, ease: 'Bounce.easeOut', stagger: { each: 0.1, from: 'random' } }, '-=8')
       .to(text3.chars, { color: 'white', textShadow: '0px 0px 15px #fff', ease: 'rough({strength: 5})', stagger: { each: 0.2, from: 'random' }, repeat: -1, repeatDelay: 3 }, '-=8')
+      .from('#line2', { width: 0, ease: 'Bounce.easeOut', duration: 3, backgroundColor: 'purple' }, '-=9')
       .from('#buttonOne', { y: -7, opacity: 0, }, '-=2')
       .from('#buttonTwo', { y: 7, opacity: 0, }, '-=2')
-      .from('#line2', { width: 0, ease: 'Bounce.easeOut', duration: 3, backgroundColor: 'purple' })
 
     gsap.to('#brac', { color: 'yellow', background: 'yellow' })
 
@@ -81,7 +81,7 @@ const Home = () => {
                   <Box borderRadius={'50%'} border='1px' mx={'3px'} borderColor='#FFBD44' backgroundColor='#FFBD44' h='1rem' w='1rem'></Box>
                   <Box borderRadius={'50%'} border='1px' borderColor='#00CA4E' h='1rem' backgroundColor='#00CA4E' w='1rem'></Box>
                 </Flex>
-                <Text overflowWrap={'anywhere'} maxW={'30rem'} id='title' color='rgba(192,192,192,.3)' className='poiret' fontWeight={['500', '800']} fontSize={['2rem', '2.5rem']} ref={titleRef}> A FullStack Web Developer &lt; /&gt; <Box fontSize={'1rem'}>console.log<Box id='brac'>(</Box>&quot; Welcome User&quot;<Box id='brac'>)</Box></Box> </Text>
+                <Text overflowWrap={'anywhere'} maxW={'30rem'} id='title' color='rgba(192,192,192,.3)' className='poiret' fontWeight={['500', '500']} fontSize={['2rem', '2.5rem']} ref={titleRef}> A FullStack Web Developer &lt; /&gt; <Box fontSize={'1rem'}>console.log<Box id='brac'>(</Box>&quot; Welcome User&quot;<Box id='brac'>)</Box></Box> </Text>
               </Box>
               <Box>
                 <Box w={['19rem', '27rem', '38rem']} background={'teal'} h='1px' id='line2' style={{ display: 'inline-block', position: 'absolute', bottom: '-1rem', left: '0rem' }} />
